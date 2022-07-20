@@ -25,7 +25,7 @@ a {
 
 .container {
 	max-width: 1300px;
-	margin: 0 auto;
+	margin: 0 auto 130px;
 }
 .margin-auto {
 	margin: auto;
@@ -35,6 +35,7 @@ a {
 }
 .d-flex {
 	display: flex;
+	gap: 25px;
 }
 .align-item-center {
 	align-items: center;
@@ -166,6 +167,9 @@ h1 {
 	border: 1px solid #161616;
 	border-radius: 5px;
 }
+.player__details {
+	padding: 20px;
+}
 .player__details h3 {
 	font-style: normal;
 	font-weight: 600;
@@ -179,7 +183,8 @@ h1 {
 .player__thamb {
 	width: 312px;
 	height: 366px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
+}
+.player__poster {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
 }
