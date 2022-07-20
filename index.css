@@ -32,12 +32,15 @@ a {
 /* Mobail */
 @media screen and (max-width: 575px) {
 	.container {
-		margin-bottom: 0;
+		flex-direction: column;
+		margin-bottom: 34rem;
+		column-gap: 10px;
 	}
 }
 /* tablet */
 @media screen and (min-width: 576px) and (max-width: 850px) {
 	.container {
+		flex-direction: column;
 		margin-bottom: 40px;
 	}
 	.banner {
@@ -65,7 +68,7 @@ a {
 h1 {
 	font-weight: 700;
 	font-size: 4rem;
-	line-height: 80px;
+	line-height: 75px;
 }
 .btn {
 	padding: 1rem 2rem;
@@ -102,7 +105,7 @@ h1 {
 	margin-top: 2rem;
 }
 .banner__blog {
-	width: 531px;
+	width: 550px;
 	color: var(--white);
 }
 .banner p {
@@ -119,7 +122,10 @@ h1 {
 /* Mobail */
 
 @media screen and (max-width: 575px) {
-	.container,
+	.container {
+		width: 399px;
+		height: 472px;
+	}
 	.banner__photo,
 	.banner__blog {
 		width: 100%;
@@ -130,14 +136,23 @@ h1 {
 		flex-direction: column-reverse;
 		text-align: center;
 	}
-
-	.hide {
-		display: none;
+	h1 {
+		font-weight: 500;
+		font-size: 3rem;
+		line-height: 65px;
+	}
+	.banner p {
+		font-size: 14px;
+		line-height: 24px;
 	}
 }
 /* tablet */
 
 @media screen and (min-width: 576px) and (max-width: 850px) {
+	.container {
+		width: 734px;
+		height: 398px;
+	}
 	.banner__blog {
 		width: 60%;
 		margin: 20px;
@@ -152,10 +167,6 @@ h1 {
 	.banner__photo {
 		width: 345px;
 		height: 320px;
-	}
-
-	.hide {
-		display: none;
 	}
 }
 
@@ -194,8 +205,7 @@ h1 {
 	background-color: #dd0000;
 	color: var(--white);
 }
-
-/*  ______Media Querie______  side-bar*/
+/*  ____Media Querie___ Side bar*/
 
 /* Mobail */
 
@@ -208,7 +218,7 @@ h1 {
 	}
 
 	.menu__box a {
-		margin: 10px 0px;
+		margin: 4px 0px 9px 0px;
 		font-weight: 500;
 		padding: 10px 0px;
 		border: 1px solid #e8e8e8;
@@ -235,13 +245,14 @@ h1 {
 		border: 1px solid #e8e8e8;
 		border-radius: 10px;
 	}
-
-	.hide {
-		display: none;
-	}
 }
 
 /* player content */
+
+.player__poster {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
 
 .player_photo {
 	width: 312px;
@@ -272,10 +283,51 @@ h1 {
 	color: rgba(22, 22, 22, 0.7);
 }
 .player__thamb {
-	width: 312px;
-	height: 366px;
+	width: 324px;
+	height: 371px;
 }
-.player__poster {
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+
+/*  ______Media Querie______  side-bar*/
+
+/* Mobail */
+
+@media screen and (max-width: 575px) {
+	.player__poster {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.player__thamb {
+		width: 396px;
+		height: 387.69px;
+		border: 1.07372px solid #e8e8e8;
+		border-radius: 10px;
+	}
+	.player_photo {
+		width: 396px;
+		height: 221.9px;
+	}
+	.player__details span {
+		margin: 0px 30px 0px;
+	}
+}
+
+/* tablet */
+
+@media screen and (min-width: 576px) and (max-width: 850px) {
+	.player__poster {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.player__thamb {
+		width: 360px;
+		height: 373.69px;
+		border: 1.07372px solid #e8e8e8;
+		border-radius: 10px;
+	}
+	.player_photo {
+		width: 360px;
+		height: 200.24px;
+	}
+	.player__details span {
+		margin: 0px 30px 0px;
+	}
 }
