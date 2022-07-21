@@ -22,10 +22,6 @@ a {
 }
 
 /* commone */
-/* body {
-	display: flex;
-	flex-direction: column;
-} */
 
 .container {
 	max-width: 1300px;
@@ -153,6 +149,9 @@ h1 {
 		width: 100%;
 		height: 100%;
 	}
+	.banner__blog {
+		padding: 1.5rem;
+	}
 	.banner__photo {
 		margin-bottom: -27px;
 	}
@@ -160,6 +159,7 @@ h1 {
 		flex-direction: column;
 		text-align: center;
 		padding: 20px 30px;
+		border-radius: 1rem;
 	}
 	h1 {
 		font-weight: 500;
