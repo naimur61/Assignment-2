@@ -63,9 +63,9 @@ a {
 	.d-m-hide {
 		visibility: visible;
 		margin: auto;
-		/* 	overflow: hidden;
+		overflow: hidden;
 		position: relative;
-		left: 12rem; */
+		left: 12rem;
 	}
 }
 
