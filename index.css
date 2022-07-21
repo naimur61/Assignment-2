@@ -355,8 +355,8 @@ h1 {
 /* _______footer_______ */
 
 footer {
-	margin-top: auto;
-	background: #161616;
+	margin: auto;
+	background-color: var(--background);
 	color: var(--white);
 	padding-top: 1rem;
 	text-align: center;
