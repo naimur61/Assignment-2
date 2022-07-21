@@ -22,6 +22,10 @@ a {
 }
 
 /* commone */
+body {
+	display: flex;
+	flex-direction: column;
+}
 
 .container {
 	max-width: 1300px;
@@ -58,10 +62,10 @@ a {
 	}
 	.d-m-hide {
 		visibility: visible;
-		overflow: hidden;
 		margin: auto;
+		/* 	overflow: hidden;
 		position: relative;
-		left: 12rem;
+		left: 12rem; */
 	}
 }
 
@@ -345,5 +349,57 @@ h1 {
 	}
 	.player__details span {
 		margin: 0px 30px 0px;
+	}
+}
+
+/* _______footer_______ */
+
+footer {
+	margin-top: auto;
+	background: #161616;
+	color: var(--white);
+	padding-top: 1rem;
+	text-align: center;
+}
+footer h2 {
+	font-weight: 700;
+	font-size: 45px;
+	margin: 3rem 0;
+}
+hr {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	width: 1320px;
+	height: 0px;
+	text-align: center;
+	margin: 3rem 0;
+}
+.footer-menu {
+	font-weight: 500;
+	font-size: 16px;
+	justify-content: center;
+	padding-bottom: 5rem;
+}
+
+/*  ______Media Querie______  footer*/
+
+/* Mobail */
+
+@media screen and (max-width: 575px) {
+	footer {
+		position: relative;
+		top: 183rem;
+		margin-top: 20px;
+	}
+	.footer-menu {
+		flex-direction: column;
+	}
+}
+
+/* tablet */
+
+@media screen and (min-width: 576px) and (max-width: 850px) {
+	footer {
+		position: relative;
+		top: 90rem;
 	}
 }
