@@ -13,7 +13,7 @@
 	--white: #ffffff;
 }
 
-img {
+.banner img {
 	width: 100%;
 }
 a {
@@ -114,7 +114,7 @@ h1 {
 	line-height: 26px;
 }
 .banner__photo {
-	width: 581px;
+	width: 582px;
 	height: 613px;
 }
 /*  ____Media Querie___ Banner*/
