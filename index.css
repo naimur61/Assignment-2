@@ -13,7 +13,7 @@
 	--white: #ffffff;
 }
 
-.banner img {
+img {
 	width: 100%;
 }
 a {
@@ -28,6 +28,10 @@ a {
 	margin: 0 auto 130px;
 }
 
+.d-m-hide {
+	visibility: hidden;
+}
+
 /*  Common____Media Querie____ */
 /* Mobail */
 @media screen and (max-width: 575px) {
@@ -35,6 +39,9 @@ a {
 		flex-direction: column;
 		margin-bottom: 34rem;
 		column-gap: 10px;
+	}
+	.d-m-hide {
+		visibility: hidden;
 	}
 }
 /* tablet */
@@ -45,6 +52,16 @@ a {
 	}
 	.banner {
 		width: 100%;
+	}
+	.t-hide {
+		display: none;
+	}
+	.d-m-hide {
+		visibility: visible;
+		overflow: hidden;
+		margin: auto;
+		position: relative;
+		left: 12rem;
 	}
 }
 
@@ -254,8 +271,15 @@ h1 {
 	gap: 20px;
 }
 
+.player__thamb {
+	width: 324px;
+	height: 371px;
+	border: 1.07372px solid #e8e8e8;
+	border-radius: 10px;
+}
+
 .player_photo {
-	width: 312px;
+	width: 324px;
 	height: 175px;
 }
 
@@ -282,10 +306,6 @@ h1 {
 	margin-right: 70px;
 	color: rgba(22, 22, 22, 0.7);
 }
-.player__thamb {
-	width: 324px;
-	height: 371px;
-}
 
 /*  ______Media Querie______  side-bar*/
 
@@ -299,8 +319,6 @@ h1 {
 	.player__thamb {
 		width: 396px;
 		height: 387.69px;
-		border: 1.07372px solid #e8e8e8;
-		border-radius: 10px;
 	}
 	.player_photo {
 		width: 396px;
@@ -318,10 +336,8 @@ h1 {
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.player__thamb {
-		width: 360px;
+		width: 359px;
 		height: 373.69px;
-		border: 1.07372px solid #e8e8e8;
-		border-radius: 10px;
 	}
 	.player_photo {
 		width: 360px;
