@@ -11,6 +11,7 @@
 	--background: #161616;
 	--btn-background: #dd0000;
 	--white: #ffffff;
+	--fb-blue: #0076ff;
 }
 
 img {
@@ -396,12 +397,15 @@ hr {
 	width: 55rem;
 	margin: 3rem auto;
 }
-
-.footer-menu {
+.footer-link a {
+	color: var(--fb-blue);
+}
+.footer-menu,
+.footer-link {
 	font-weight: 500;
 	font-size: 16px;
 	justify-content: center;
-	padding-bottom: 5rem;
+	padding-bottom: 1rem;
 }
 
 /*  ______Media Querie______  footer*/
