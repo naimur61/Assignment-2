@@ -22,10 +22,10 @@ a {
 }
 
 /* commone */
-body {
+/* body {
 	display: flex;
 	flex-direction: column;
-}
+} */
 
 .container {
 	max-width: 1300px;
@@ -359,6 +359,7 @@ footer {
 	color: var(--white);
 	padding-top: 1rem;
 	text-align: center;
+	overflow: hidden;
 }
 footer h2 {
 	font-weight: 700;
