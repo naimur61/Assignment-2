@@ -14,6 +14,18 @@
 	--fb-blue: #0076ff;
 }
 
+body {
+	animation: body 0.4s ease-out;
+}
+@keyframes body {
+	from {
+		transform: translateX(-100px);
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+
 img {
 	width: 100%;
 }
@@ -87,6 +99,14 @@ h1 {
 	margin-top: 1.5rem;
 	background-color: var(--btn-background);
 	color: var(--white);
+	transition: all 1s;
+}
+.visit__link:hover {
+	transform: scale(0.9);
+	color: var(--btn-background);
+	border: 1px solid whitesmoke;
+	cursor: pointer;
+	background-color: var(--white);
 }
 
 /* banner */
@@ -206,6 +226,18 @@ h1 {
 	background-color: #dd0000;
 	color: var(--white);
 }
+
+.menu {
+	transition: all 1s;
+}
+.menu:hover {
+	transform: scale(0.9);
+	color: whitesmoke;
+	border: 1px solid whitesmoke;
+	cursor: pointer;
+	background-color: transparent;
+}
+
 /*  ____Media Querie___ Side bar*/
 
 /* Mobail */
@@ -260,8 +292,18 @@ h1 {
 	height: 242px;
 	border: 1.07372px solid #e8e8e8;
 	border-radius: 10px;
+	animation: div 1s;
+	transition: all 1s;
 }
 
+@keyframes div {
+	from {
+		transform: scale(0.01);
+	}
+	to {
+		transform: scale(1);
+	}
+}
 .country__flag {
 	align-items: center;
 	padding: 50px 25px 20px;
